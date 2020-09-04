@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        cookieChoices={};
+    </script>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right ,red,yellow);
+}
+#logoBox{
+    width: 30%;
+    height: 100%;
+     float: right;
+    
+     
+}
+#h1Header{
+    float: left;
+    line-height: 100px;
+    padding: 0 15px;
+    font-size: 30px;
+}
+#logo{
+   
+    height: 100%;
+    border-radius: 50%;
+}
+nav{
+    width: 70%;
+    
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+nav li{
+   line-height: 100px;
+display: inline-block;
+width: 100px;
+text-align: center;
+}
+nav a:hover{
+background-color: white;
+color: black;
+height: 100%;
+width: 100%;
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(236, 43, 43);
+    border-top: solid white 3px;
+    animation-name: changeBackground;
+    animation-duration: 3s;
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: #fafafa;
+text-align: center;
+float: left;
+}
+aside img{
+    width: 90%;
+    height: 80%;
+}
+#h1aside{
+    padding: 20px 0;
+    border-bottom:2px red solid ;
+}
+#article{
+    width: 70%;
+    height: 600px;
+    background-color:rgb(255, 165, 0);
+    float: right;
+    position: relative;
+    animation-name: changeBackground;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#box{
+    text-align: center;
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(204, 179, 194);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#box h1{
+    border-bottom: solid rgb(189, 102, 22) 2px;
+    padding: 5px;
+}
+#box p{
+    text-align: center;
+    padding: 15px;
+}
+#contact-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+#contact-box img{
+ padding: 6px;
+ width: 70px;
+ border-bottom: solid red 2px;
+
+}
+#contact-box img:hover{
+width:90px ;
+border-bottom: solid 3px ;
+}
+@keyframes changeBackground{
+    0%{
+background-color:white ;
+    }
+    50%{
+        background-color:red ;
+    }
+    100%{
+        background-color:rgb(216, 228, 49) ;
+    }
+}
+
+@media all{
+    
+}
+@media only screen and(min-width:940px) and (max-width:1070px){
+    #logoBox{
+        width: 35%
+    }
+    #article{
+        width: 65%;
+    }
+    #aside{
+        width: 35%;
+    }
+}
+@media only screen and(max-width:940px){
+    #logoBox{
+        width: 40%;
+    }
+}
+@media only screen and(max-width:801px){
+    #header,main{
+       height: auto;
+    }
+    #logoBox{
+        width: 100%;
+    }
+    #h1Header,#logo{
+        float: none;
+    }
+ nav,aside{
+     width: 100%;
+ }
+ #article{
+     height: 230px;
+     width: 100%;
+     background-color: #fafafa;
+ }
+}
+@media only screen and(max-width:500px){
+    nav li{
+       display: block;
+       width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <span id="logoBox">
+        <a href=""><h1 id="h1Header">Engineer Alen </h1></a>
+        <a href="https://alen.com/"><img src="Photos/alen.png"  id="logo" alt=""></a>
+
+    </span>
+    <nav>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/"><b>الصفحة الرئيسية</b></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/"><b>الفيديوهات</b></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/"><b>قوائم التشغيل</b></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main >
+    <aside>
+
+        <a href="https://www.youtube.com/c/CoderShiyar/featured"><img src="Photos/alen.png" alt=""></a>
+        <h1 id="h1aside">Alen Awni</h1>
+        <div id="contact-box">
+<a href="https://www.youtube.com/c/CoderShiyar/playlists"><img src="Photos/youtube.png"></a>
+
+<a href="https://www.instagram.com/?hl=en"><img src="Photos/instagram.png" alt=""></a>
+<a href="https://www.facebook.com/"><img src="Photos/facebook.png" alt=""></a>
+<a href="https://www.snap.com/en-US/"><img src="Photos/snapchat.png" alt=""></a>
+
+        </div>
+    
+    </aside>
+    <article id="article">
+<div id="box">
+    <h1>مهندسة الكومبيوتر</h1>
+    <p>انا اسمي الين عوني عمري 19 سنة ادرس  في كلية الهندسة واحب ان اتعلم البرمجة واتقنها بشكل جيد في المستقبل  </p>
+</div>
+    </article>
+
+</main>
+</body>
+</html>
